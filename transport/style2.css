@@ -1,0 +1,129 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #337ab7;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #fff;
+    margin: 0;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+/* Main Content Styling */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Section Styling */
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px;
+    width: calc(33.333% - 30px); /* Adjust for margin */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease;
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+}
+
+section:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styling */
+h2 {
+    color: #337ab7;
+    margin-bottom: 10px;
+}
+
+/* Image Styling */
+img {
+    width: 100%;
+    height: auto; /* Adjusts height proportionally to width */
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Paragraph Styling */
+p {
+    margin-bottom: 20px;
+    line-height: 1.6; /* Improves readability */
+}
+
+/* Button Styling */
+button {
+    background-color: #337ab7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 1em; /* Ensures button text is legible */
+}
+
+button:hover {
+    background-color: #23527c;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #337ab7;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    clear: both;
+    position: relative; /* Ensure footer sticks to the bottom of the page */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        width: calc(50% - 30px); /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        width: calc(100% - 30px); /* Full width for mobile screens */
+    }
+}
